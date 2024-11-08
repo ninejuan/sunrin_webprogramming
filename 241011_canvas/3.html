@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myc"
+      width="300"
+      height="200"
+      style="border: 1px dotted red"
+    ></canvas>
+  </body>
+  <script>
+    let c = document.getElementById("myc");
+    let ctx = c.getContext("2d");
+
+    ctx.beginPath();
+    ctx.moveTo(50, 30);
+    ctx.lineTo(30, 100);
+    ctx.lineTo(200, 100);
+    ctx.fillStyle = "#FFFF00";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(100, 30);
+    ctx.lineTo(80, 100);
+    ctx.lineTo(250, 100);
+    ctx.closePath();
+    ctx.strokeStyle = "#000";
+    ctx.stroke();
+  </script>
+</html>

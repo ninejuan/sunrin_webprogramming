@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>첫번째 p 요소</p>
+    <p>두번째 p 요소</p>
+    <p id="special"></p>
+    <script>
+        let eleArray = document.getElementsByTagName("p");
+        let a = document.getElementById("special");
+        a.innerHTML = "eleAdrray[0]: " + eleArray[0].innerHTML;
+    </script>
+</body>
+</html>
+

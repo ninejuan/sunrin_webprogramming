@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>children 속성 테스트 페이지</h2>
+    <p>body 요소의 자식 요소들은 다음과 같습니다:</p>
+    <p id="test" onclick="test()"></p>
+
+    <script>
+        let collection = document.body.children;
+        let s = "";
+        for (let i = 0; i < collection.length; i++) {
+            s += collection[i].tagName + "<br>";
+        }
+        document.getElementById("test").innerHTML = s;
+        alert(document.getElementById("test").onclick);
+    </script>
+</body>
+
+</html>

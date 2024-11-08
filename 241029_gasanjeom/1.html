@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+    <script>
+      let context = document.getElementById("myCanvas").getContext("2d");
+      for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 10; j++) {
+          context.fillStyle =
+            "rgb(" + (255 - 20 * i) + ", " + (255 - 20 * j) + ", 0)";
+          context.fillRect(j * 50, i * 30, 45, 25);
+        }
+      }
+    </script>
+  </body>
+</html>

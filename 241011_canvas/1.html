@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myc" width="300" height="200" style="border: 1px dotted red;"></canvas>
+</body>
+<script>
+    let c = document.getElementById("myc");
+    let ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(80, 80);
+    ctx.lineTo(50, 120);
+    ctx.lineTo(150, 120);
+    ctx.fill();    
+</script>
+</html>

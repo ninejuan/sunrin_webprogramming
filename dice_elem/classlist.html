@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .style1 {
+        background-color: rgb(89, 65, 199);
+        color: aliceblue;
+        height: 60px;
+    }
+</style>
+
+<body>
+    <button onclick="sub()">요소에 클래스 추가</button>
+    <div id="special">
+        <p>This is a paragraph.</p>
+    </div>
+
+    <script>
+        function sub() {
+            // document.getElementById("special").classList.add("style1");
+            document.getElementById("special").classList.toggle("style1");
+        }
+    </script>
+
+</body>
+
+</html>

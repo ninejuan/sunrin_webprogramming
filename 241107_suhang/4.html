@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+        function getTextAreaValue() {
+            let s;
+            s = document.querySelector("#textarea").value;
+            document.querySelector("#result").value = s;
+            //;
+        }
+    </script>
+</head>
+<body>
+    <TEXTAREA id="textarea" rows=5 cols=20>This is a TextArea.</TEXTAREA>
+    <input type="button" onClick="getTextAreaValue();" value="클릭">
+    <TEXTAREA id="result" rows=5 cols=20></TEXTAREA>
+</body>
+</html>
+

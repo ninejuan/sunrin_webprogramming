@@ -1,0 +1,51 @@
+<!-- 해당 코드는 DOM 4차시 기본 계산기 코드입니다.-->
+<!-- 응용 코드를 보기 위해서는 advance.html을 확인해주시기 바랍니다.-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+.button {
+padding: 10px;
+width: 50px;
+height: 50px;
+}
+</style>
+<script>
+function add() {
+    first = document.getElementById("number1").value;
+    second = document.getElementById("number2").value;
+    result = document.getElementById("result");
+    result.value = Number(first) + Number(second);
+}
+
+function subt() { 
+    first = document.getElementById("number1").value;
+    second = document.getElementById("number2").value;
+    result = document.getElementById("result");
+    result.value = first - second;
+}
+
+function multi() {
+    first = document.getElementById("number1").value;
+    second = document.getElementById("number2").value;
+    result = document.getElementById("result");
+    result.value = first * second;
+}
+
+function div() {
+    first = document.getElementById("number1").value;
+    second = document.getElementById("number2").value;
+    result = document.getElementById("result");
+    result.value = first / second;
+}
+</script>
+<body>
+숫자 1: <input type=text id="number1" value="9"><br>
+숫자 2: <input type=text id="number2" value="6"><br>
+<input type=button value="+" onclick="add()" class="button">
+<input type=button value="-" onclick="subt()" class="button">
+<input type=button value="*" onclick="multi()" class="button">
+<input type=button value="/" onclick="div()" class="button"><br>
+연산결과: <input type=text id="result" value="">
+</body>
+</html>

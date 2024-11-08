@@ -1,0 +1,27 @@
+
+
+1. 코드의 실행문별 의미를 작성하여 제출하세요. 코드 옆 주석표시를 하여 제출합니다.
+
+function start() { # start 함수 선언
+
+            init(); # init 함수 호출
+
+            velocity = Number(document.getElementById("velocity").value); # velocity 변수를 가져오고, Number type으로 type casting
+
+            angle = Number(document.getElementById("angle").value); # angle 변수를 가져오고, number type으로 type casting
+
+            let angleR = angle * Math.PI / 180; # angle을 radian 단위로 변환
+
+            ballVx = velocity * Math.cos(angleR); # 초기 속도의 수평 데이터값
+
+            ballVy = -velocity * Math.sin(angleR); # 초기 속도의 수직 데이터값
+
+            draw(); # draw 함수 호출
+
+            timer = setInterval(calculate, 100); # calculate 함수 100ms 당 1회씩 호출
+
+            return false
+
+        }
+
+

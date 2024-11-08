@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 굴리기</title>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            font-family: 'Pretendard', sans-serif;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #dice {
+            display: inline-block;
+            padding: 20px;
+            margin: 10px auto;
+            background-color: rgb(207, 204, 204);
+            border: 1px solid rgb(207, 204, 204);
+            border-radius: 10px;
+            font-size: 100px;
+            width: 100px; /* 기본 너비 */
+            transition: width 0.2s ease;
+        }
+
+        h3, input, button {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function roll() {
+            const maxno = parseInt(document.getElementById('maxn').value) || 6; // 기본값 6면체 주사위
+            const num = Math.floor(Math.random() * maxno) + 1;
+            const dice = document.getElementById('dice');
+            dice.innerHTML = num;
+
+            // 글자 크기에 맞춰 주사위의 너비만 늘어나도록 수정
+            dice.style.width = (num.toString().length * 60) + 'px'; 
+        }
+    </script>
+</head>
+
+<body>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <input type="number" placeholder="몇 면체 주사위인가요?" id="maxn" min="1">
+    <p id="dice"></p>
+    <button onclick="roll()">주사위 굴리기</button>
+</body>
+
+</html>
+

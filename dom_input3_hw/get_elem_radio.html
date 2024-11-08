@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getValue() {
+            const radios = document.getElementsByName('color');
+            let sv;
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    sv = radios[i].value;
+                    break;
+                }
+            }
+            document.getElementById('result').value = sv;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="radio" name="color" CHECKED value="red">RED<BR>
+    <input type="radio" name="color" value="blue">BLUE<BR>
+    <input type="radio" name="color" value="green">GREEN<BR>
+    <input type="button" onClick="getValue();" value="클릭">
+    <input type="text" id="result" value="">
+</body>
+
+</html>

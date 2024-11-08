@@ -1,0 +1,6 @@
+--2024-08-23 12:03:31--  https://drive.google.com/file/d/1X-Pt4uTIPQMXgUQqmwlOEFmriUNiOcun/view?usp=classroom_web
+Resolving drive.google.com (drive.google.com)... 172.217.161.206, 2404:6800:400a:80a::200e
+Connecting to drive.google.com (drive.google.com)|172.217.161.206|:443... connected.
+HTTP request sent, awaiting response... 401 Unauthorized
+
+Username/Password Authentication Failed.

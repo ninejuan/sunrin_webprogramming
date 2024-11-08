@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myc"
+      width="300"
+      height="200"
+      style="border: 1px dotted red"
+    ></canvas>
+  </body>
+  <script>
+    let c = document.getElementById("myc");
+    let ctx = c.getContext("2d");
+
+    let img = new Image();
+    img.src =
+      "https://i.namu.wiki/i/jlVh9tqQenUjRkmbhvNK517S0G0ABEC-ezq4WRcZT2SaWsvuuqRlMkbcOxPoi563LPs40PKCfK9HZvZ1n6w-7SF92GvzmEwfnjzWmcU2XQ62nOzyw11RS_WyICyMHPfLE0jP1k_ZRNjZZdQAg-zzyA.svg";
+    img.onload = function () {
+      ctx.drawImage(img, 50, 50, 100, 100);
+    };
+  </script>
+</html>

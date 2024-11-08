@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       
+    <script>
+      function getValue() {
+        let list = document.getElementsByName("color");
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].checked) {
+            document.getElementById("result").value = list[i].value;
+            break;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+        <input type="radio" name="color" checked value="red" />RED<br />
+        <input type="radio" name="color" value="blue" />BLUE<br />
+        <input type="radio" name="color" value="green" />GREEN<br />
+        <input type="button" onClick="getValue();" value="클릭" />
+    <input type="text" id="result" value="" />
+  </body>
+</html>

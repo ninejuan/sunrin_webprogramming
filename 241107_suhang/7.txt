@@ -1,0 +1,54 @@
+포물선 화면 구현 화면 구현 서술형
+
+ <script>
+
+        let image = new Image();
+
+        image.src = "lawn.png";
+
+        let backimage = new Image();
+
+        backimage.src = "net.png";
+
+        function drawBackground() {
+
+            context.drawImage(image, 0, 270);
+
+            context.drawImage(backimage, 450, 60);
+
+        }
+
+        function draw() {
+
+            context.clearRect(0, 0, 500, 300);
+
+            drawBackground();
+
+        }
+
+        function init() {
+
+            context = document.getElementById('canvas').getContext('2d');
+
+            draw();
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="init()">
+
+
+1. function drawBackground() 
+
+2. function draw()
+
+3. function init()
+
+함수의 기능에 대해 각각 설명하시오.
+
+1. lawn.png, net.png를 생성한다.
+2. 500, 300 사이즈의 직사각형 하나를 생성하고, drawBackground 함수를 호출한다.
+3. context 변수를 선언하고, draw 함수를 호출한다. 

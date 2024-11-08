@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+    <script>
+      let canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      let gradient = context.createRadialGradient(70, 50, 10, 80, 60, 120);
+      gradient.addColorStop(0, "white");
+      gradient.addColorStop(1, "red");
+      context.fillStyle = gradient;
+      context.fillRect(10, 10, 300, 200);
+    </script>
+  </body>
+</html>

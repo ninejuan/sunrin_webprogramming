@@ -1,5 +1,5 @@
 const button = document.querySelector(".button");
-const API_KEY = "14f7e52e4618132753334bb20aa84d0c";
+const API_KEY = "18e41b5797f0b0eb0d6059dad5730fd5";
 const tempSection = document.querySelector(".temperature");
 const placeSection = document.querySelector(".place");
 const iconSection = document.querySelector(".icon");
